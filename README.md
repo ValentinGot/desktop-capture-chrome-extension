@@ -1,6 +1,8 @@
 # desktop-capture-chrome-extension
 
-The extension retrieve the source ID of any screen/window and return it to your web page
+**WebRTC experiments**
+
+The extension retrieve the source ID of any screen/window and return it to your web page.
 
 > **Warning**
 >

@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Desktop capture",
+  "description": "A chrome extension to capture the content of your screen or any open window",
+  "version": "1.0.0",
+  "author": "Valentin GOT",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "content_scripts": [{
+    "js": [ "main.js" ],
+    "all_frames": true,
+    "run_at": "document_start",
+    "matches": [ "<all_urls>" ]
+  }],
+  "background": {
+    "scripts": [ "background.js" ],
+    "persistent": false
+  },
+  
+  "permissions": [
+    "desktopCapture"
+  ]
+}
